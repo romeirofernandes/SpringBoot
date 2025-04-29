@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/bricolage-grotesque";
+
+body {
+  background-color: #080808;
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+input:focus, 
+select:focus, 
+textarea:focus {
+  @apply outline-none ring-2 ring-[#e10600] border-[#e10600];
+}
+
+/* Form elements styling */
+input, select, textarea {
+  @apply transition-colors duration-200;
+}
